@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agua Única | El descubrimiento de la pureza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        .parallax { background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+        .text-gradient { background: linear-gradient(to right, #00AEEF, #E31E24); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-white text-slate-900 overflow-x-hidden">
+
+    <!-- Navbar Minimalista -->
+    <nav class="fixed w-full z-50 py-6 px-10 flex justify-between items-center glass-card border-b border-white/20">
+        <img src="logo.jpg" alt="Logo" class="h-12 hover:scale-105 transition transform">
+        <div class="hidden md:flex gap-10 font-medium tracking-tight text-sm uppercase">
+            <a href="#filosofia" class="hover:text-blue-500 transition">Filosofía</a>
+            <a href="#proceso" class="hover:text-blue-500 transition">Proceso</a>
+            <a href="#contacto" class="hover:text-blue-500 transition">Contacto</a>
+        </div>
+        <a href="https://wa.me/51920830058" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-blue-700 transition">WHATSAPP</a>
+    </nav>
+
+    <!-- Hero Section: El Paisaje -->
+    <header class="relative h-screen flex items-center justify-center text-center">
+        <img src="foto-principal.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Manantial">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative z-10 px-4">
+            <h1 class="text-white text-7xl md:text-9xl font-black mb-4 tracking-tighter">ÚNICA</h1>
+            <p class="text-white text-xl md:text-2xl font-light max-w-2xl mx-auto drop-shadow-md">
+                "El agua más pura no se hace, se descubre en la naturaleza."
+            </p>
+        </div>
+    </header>
+
+    <!-- Sección Filosofía: La Pureza -->
+    <section id="filosofia" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="rounded-3xl overflow-hidden shadow-2xl rotate-2">
+                <img src="agua-pura.jpg" alt="Agua pura">
+            </div>
+            <div>
+                <h2 class="text-4xl font-black mb-6 text-gradient">Pureza Inalterable</h2>
+                <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                    Nacida en el Caserío Pachani, Asunción, nuestra agua mantiene su esencia natural intacta. No intervenimos en su creación; solo la protegemos para que llegue a tu mesa tal como brota de la tierra.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <span class="block font-bold text-2xl">100%</span>
+                        <span class="text-sm text-slate-500 uppercase">Natural</span>
+                    </div>
+                    <div class="border-l-4 border-red-500 pl-4">
+                        <span class="block font-bold text-2xl">Origen</span>
+                        <span class="text-sm text-slate-500 uppercase">Asunción, Cajamarca</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Catálogo de Productos -->
+    <section id="catalogo" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black uppercase italic mb-4">Nuestra Línea</h2>
+                <div class="h-1 w-24 bg-red-600 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Bidón 21L -->
+                <div class="product-card bg-slate-50 rounded-3xl p-8 text-center shadow-lg border border-slate-100">
+                    <img src="684302227_1811617766637756_5920237465454282579_n.jpg" class="h-64 mx-auto mb-6 object-contain" alt="Bidon 21 Litros">
+                    <h3 class="text-2xl font-bold mb-2">Bidón 21L</h3>
+                    <p class="text-slate-500 mb-6 font-medium uppercase tracking-widest text-xs">Presentación Hogar</p>
+                    <a href="https://wa.me/51920830058?text=Hola!%20Deseo%20pedir%20el%20Bidón%20de%2021L" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-700 transition shadow-md">Pedir Ahora</a>
+                </div>
+
+                <!-- Botella Personal -->
+                <div class="product-card bg-slate-50 rounded-3xl p-8 text-center shadow-lg border border-slate-100">
+                    <img src="botella.png" class="h-64 mx-auto mb-6 object-contain" alt="Botella Personal">
+                    <h3 class="text-2xl font-bold mb-2">Personal</h3>
+                    <p class="text-slate-500 mb-6 font-medium uppercase tracking-widest text-xs">Llévala contigo</p>
+                    <a href="https://wa.me/51920830058?text=Hola!%20Deseo%20pedir%20botellas%20personales" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-700 transition shadow-md">Pedir Ahora</a>
+                </div>
+
+                <!-- Pack Familiar -->
+                <div class="product-card bg-slate-50 rounded-3xl p-8 text-center shadow-lg border border-slate-100">
+                    <img src="image_3ad486.png" class="h-64 mx-auto mb-6 object-contain" alt="Pack Familiar">
+                    <h3 class="text-2xl font-bold mb-2">Pack Familiar</h3>
+                    <p class="text-slate-500 mb-6 font-medium uppercase tracking-widest text-xs">Máxima duración</p>
+                    <a href="https://wa.me/51920830058?text=Hola!%20Deseo%20consultar%20sobre%20el%20Pack%20Familiar" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-700 transition shadow-md">Consultar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proceso: La Planta (Foto del trabajador) -->
+    <section id="proceso" class="py-24 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row-reverse gap-16 items-center">
+            <div class="w-full md:w-1/2">
+                <img src="planta.jpg" class="rounded-3xl shadow-2xl -rotate-2" alt="Nuestra planta">
+            </div>
+            <div class="w-full md:w-1/2">
+                <span class="text-blue-500 font-bold tracking-widest text-xs uppercase">Tecnología y Seguridad</span>
+                <h2 class="text-4xl font-black mt-2 mb-6 uppercase italic">Compromiso en cada gota</h2>
+                <p class="text-lg text-slate-600 mb-6">
+                    Contamos con un equipo dedicado y procesos automatizados de alta precisión. Cada envase es el resultado de un control de calidad riguroso, garantizando salud y frescura para tu familia.
+                </p>
+                <ul class="space-y-4 text-slate-700 font-medium">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Embotellado bajo normas de higiene estrictas.</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Personal altamente capacitado.</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Distribución directa en Cajamarca y alrededores.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-20 bg-slate-900 text-white text-center relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-5xl md:text-6xl font-black mb-8 italic">Únete a la experiencia ÚNICA</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/51920830058" class="bg-blue-600 hover:bg-blue-500 px-10 py-5 rounded-full font-black text-lg transition shadow-xl">
+                    PEDIR POR WHATSAPP
+                </a>
+                <a href="https://web.facebook.com/AguaDeManantialUnica" class="bg-white text-slate-900 hover:bg-slate-200 px-10 py-5 rounded-full font-black text-lg transition">
+                    VER FACEBOOK
+                </a>
+            </div>
+            <p class="mt-12 text-slate-400">Pachani, Asunción, Cajamarca, Perú | 920 830 058</p>
+        </div>
+    </section>
+
+</body>
+</html>
